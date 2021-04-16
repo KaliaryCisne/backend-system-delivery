@@ -12,8 +12,8 @@ class CreateController extends Controller
     public function create(CreateResquest $request)
     {
         try {
-            $student = new Delivery();
-            $student->create($request->all());
+            $deliveries = new Delivery();
+            $deliveries->create($request->all());
 
             return $this->responseSuccess("Entrega registrada com sucesso!", 201);
 
