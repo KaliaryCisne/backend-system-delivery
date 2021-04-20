@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return "Seja bem vindo";
-});
+//Route::get('/', function () {
+//    return "Seja bem vindo";
+//});

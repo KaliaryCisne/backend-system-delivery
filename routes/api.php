@@ -17,5 +17,6 @@ Route::prefix('v1')->namespace('Api\V1')->group(function () {
     Route::prefix('delivery')->namespace('Delivery')->group(function () {
         Route::post('create', 'CreateController@create')->name('create');
         Route::get('list', 'ListController@list')->name('list');
+        Route::delete('delete/{id}', 'DeleteController@delete')->name('delete');
     });
 });
