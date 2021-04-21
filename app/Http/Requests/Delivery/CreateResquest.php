@@ -16,8 +16,10 @@ class CreateResquest extends FormRequest
         return [
             'client_name'              => 'required|max:255|string',
             'delivery_date'            => 'required|date',
-            'starting_coordinate'      => 'required|string',
-            'destination_coordinate'   => 'required|string'
+            'starting_latitude'        => 'required|string',
+            'starting_longitude'       => 'required|string',
+            'destination_latitude'     => 'required|string',
+            'destination_longitude'    => 'required|string'
         ];
     }
 
